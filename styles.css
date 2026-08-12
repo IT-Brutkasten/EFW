@@ -102,24 +102,26 @@ a {
   background: var(--brand-blue-soft);
 }
 
-.student-card__label {
+.student-card__text {
   padding: 1rem 1.1rem 1.15rem;
+  text-align: center;
+}
+
+.student-card__label {
+  display: block;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--brand-blue-dark);
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
-.student-card__label::after {
-  content: "";
+.student-card__subtitle {
   display: block;
-  width: 3rem;
-  height: 3px;
-  margin: 0.7rem auto 0;
-  border-radius: 999px;
-  background: var(--brand-blue);
-  opacity: 0.2;
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 900px) {
