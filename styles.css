@@ -70,6 +70,41 @@ a {
   margin: 0 auto 4rem;
 }
 
+.trainer-section {
+  margin: 0 0 2rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.trainer-section__title {
+  margin: 0;
+  color: var(--brand-blue-dark);
+}
+
+.trainer-section__text {
+  margin: 0.55rem 0 1rem;
+  color: var(--text-muted);
+}
+
+.trainer-section__card {
+  max-width: 360px;
+}
+
+.student-section {
+  margin: 0;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.student-section__title {
+  margin: 0 0 1rem;
+  color: var(--brand-blue-dark);
+}
+
 .student-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -84,7 +119,10 @@ a {
   border: 1px solid var(--border);
   border-radius: 20px;
   box-shadow: 0 14px 30px rgba(15, 76, 129, 0.08);
-  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
 }
 
 .student-card:hover,
@@ -124,6 +162,15 @@ a {
   letter-spacing: 0.02em;
 }
 
+.student-card--trainer {
+  border-color: rgba(15, 76, 129, 0.35);
+  box-shadow: 0 18px 36px rgba(15, 76, 129, 0.14);
+}
+
+.student-card--trainer .student-card__label {
+  color: var(--brand-blue);
+}
+
 @media (max-width: 900px) {
   .student-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -147,7 +194,19 @@ a {
   .page-wrap {
     margin-bottom: 2.5rem;
   }
-}:root {
+
+  .trainer-section {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .student-section {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+}
+
+:root {
   --brand-blue: #0f4c81;
   --brand-blue-dark: #0b3557;
   --text-dark: #17324d;
@@ -215,6 +274,11 @@ h3 {
   letter-spacing: 0.08em;
 }
 
+.profile-note {
+  max-width: 68ch;
+  margin: 0.5rem auto 0;
+}
+
 .content-wrap {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
@@ -253,6 +317,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.back-link {
+  font-weight: 700;
 }
 
 article {
