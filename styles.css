@@ -93,16 +93,79 @@ a {
 }
 
 .student-section {
-  margin: 0;
+  margin: 0 0 2rem;
   padding: 1.25rem;
   background: rgba(255, 255, 255, 0.84);
   border: 1px solid var(--border);
   border-radius: 22px;
 }
 
+.student-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.student-section--2026 {
+  --accent: #0f4c81;
+  --accent-strong: #0b3557;
+  --accent-soft: rgba(15, 76, 129, 0.32);
+  --accent-shadow: rgba(15, 76, 129, 0.16);
+}
+
+.student-section--2025 {
+  --accent: #157a6e;
+  --accent-strong: #0f5c53;
+  --accent-soft: rgba(21, 122, 110, 0.32);
+  --accent-shadow: rgba(21, 122, 110, 0.16);
+}
+
+.student-section--2024 {
+  --accent: #9c6b1f;
+  --accent-strong: #7a5216;
+  --accent-soft: rgba(156, 107, 31, 0.32);
+  --accent-shadow: rgba(156, 107, 31, 0.16);
+}
+
+.student-section--2026,
+.student-section--2025,
+.student-section--2024 {
+  border-color: var(--accent-soft);
+}
+
 .student-section__title {
+  display: inline-block;
   margin: 0 0 1rem;
-  color: var(--brand-blue-dark);
+  color: var(--accent-strong, var(--brand-blue-dark));
+  background-image: linear-gradient(
+    110deg,
+    var(--accent-strong, var(--brand-blue-dark)) 30%,
+    var(--accent, var(--brand-blue)) 45%,
+    #ffffff 50%,
+    var(--accent, var(--brand-blue)) 55%,
+    var(--accent-strong, var(--brand-blue-dark)) 70%
+  );
+  background-size: 240% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: title-shimmer 7s ease-in-out infinite;
+}
+
+@keyframes title-shimmer {
+  0% {
+    background-position: 180% 0;
+  }
+  100% {
+    background-position: -80% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .student-section__title {
+    animation: none;
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    color: var(--accent-strong, var(--brand-blue-dark));
+  }
 }
 
 .student-grid {
@@ -130,6 +193,16 @@ a {
   transform: translateY(-4px);
   border-color: rgba(15, 76, 129, 0.28);
   box-shadow: 0 20px 42px rgba(15, 76, 129, 0.14);
+}
+
+.student-section--2026 .student-card:hover,
+.student-section--2026 .student-card:focus-visible,
+.student-section--2025 .student-card:hover,
+.student-section--2025 .student-card:focus-visible,
+.student-section--2024 .student-card:hover,
+.student-section--2024 .student-card:focus-visible {
+  border-color: var(--accent-soft);
+  box-shadow: 0 20px 42px var(--accent-shadow);
 }
 
 .student-card img {
