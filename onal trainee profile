@@ -1,0 +1,64 @@
+[1mdiff --git a/FelixEisele/steckbrief.html b/FelixEisele/steckbrief.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4339023[m
+[1m--- /dev/null[m
+[1m+++ b/FelixEisele/steckbrief.html[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m
+[32m+[m[32m<html lang="de">[m
+[32m+[m
+[32m+[m[32m<head>[m
+[32m+[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m
+[32m+[m[32m<title>Steckbrief Felix Eisele</title>[m
+[32m+[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m<h1>Felix Eisele</h1>[m
+[32m+[m
+[32m+[m[32m<p>Hallo, ich bin Felix Eisele und studiere IT-Security an der DHBW.</p>[m
+[32m+[m
+[32m+[m[32m<h2>Meine Hobbys</h2>[m
+[32m+[m
+[32m+[m[32m<ul>[m
+[32m+[m
+[32m+[m[32m<li>Programmieren</li>[m
+[32m+[m
+[32m+[m[32m<li>Gaming</li>[m
+[32m+[m
+[32m+[m[32m<li>IT-Sicherheit</li>[m
+[32m+[m
+[32m+[m[32m</ul>[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex beb1979..64ee0fd 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -38,7 +38,7 @@[m
+       </section>[m
+ [m
+       <section class="student-section" aria-label="Talent-Seiten">[m
+[31m-        <h2 class="student-section__title">Talente</h2>[m
+[32m+[m[32m        <h2 class="student-section__title">Max Mustermann</h2>[m
+         <div class="student-grid">[m
+           <a[m
+             class="student-card"[m
+[36m@@ -62,9 +62,9 @@[m
+               alt="Platzhalterbild für Talent 1"[m
+             />[m
+             <div class="student-card__text">[m
+[31m-              <span class="student-card__label">Talent 1</span>[m
+[32m+[m[32m              <span class="student-card__label">Felix Eisele</span>[m
+               <span class="student-card__subtitle"[m
+[31m-                >Ausbildungsberuf / Studiengang</span[m
+[32m+[m[32m                >DHBW IT-Security</span[m
+               >[m
+             </div>[m
+           </a>[m
